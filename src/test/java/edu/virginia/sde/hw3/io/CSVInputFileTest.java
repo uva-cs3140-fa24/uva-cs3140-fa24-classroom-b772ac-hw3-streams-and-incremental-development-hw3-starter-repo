@@ -18,13 +18,14 @@ import edu.virginia.sde.hw3.State;
 import edu.virginia.sde.hw3.States;
 import org.junit.jupiter.api.Test;
 
+import java.io.IOException;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.assertIterableEquals;
 
-public class CSVInputFileTest {
+public class CSVInputFileTest throws IOException {
     @Test
     public void getStates() {
         final String TEST_CSV_FILE = "csv_test_files\\states.csv";
